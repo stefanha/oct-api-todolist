@@ -1,0 +1,16 @@
+meta:
+  schema: v0.0.1
+name: todolist
+models:
+  - name: TodoItem
+    description: Record of an item on the todo list
+    fields:
+      - name: subject
+        type: string
+        description: Todo item subject
+api:
+  endpoints:
+    - name: todo
+      path: /todo
+      type: model
+      model: TodoItem
